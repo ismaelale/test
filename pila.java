@@ -7,7 +7,7 @@ public class pila{
 
         Stack<Integer> pila = new Stack<>();
         
-        pila.push(10);
+        pila.push(10); 
         pila.push(20);
         pila.push(30);
 
