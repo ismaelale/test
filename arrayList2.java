@@ -17,7 +17,7 @@ public class arrayList2 {
         for(int i = 0; i < cantidad; i++){
             
             int num = sca.nextInt();
-            sca.nextLine();
+            sca.nextLine(); 
             numero.add(num);
             
         }
