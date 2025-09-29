@@ -28,6 +28,7 @@ public class EjercicioPila5{
         }while(!palabra.equals("FIN"));
 
         System.out.println(pila);
+        System.out.println("HOLA");
         
     }
 }
