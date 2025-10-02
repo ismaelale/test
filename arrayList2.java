@@ -22,6 +22,7 @@ public class arrayList2 {
             
         }
 
+        //Ordenamiento de burbuja
         for(int j = 0; j < numero.size() - 1; j++){
             for(int x = 0; x < numero.size() - 1 - j; x++){
                 if(numero.get(x) > numero.get(x + 1)){
