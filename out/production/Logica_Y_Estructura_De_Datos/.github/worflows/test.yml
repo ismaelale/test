@@ -1,0 +1,27 @@
+name: Java CI
+
+on:
+  push:
+    branches: [ "main" ]   # si tu rama se llama master, cámbialo a "master"
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Descargar el código
+      uses: actions/checkout@v3
+
+    - name: Instalar Java
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Compilar los archivos Java
+      run: javac src/*.java
+
+    - name: Ejecutar las pruebas
+      run: java -cp .:src org.junit.runner.JUnitCore CalculadoraTest

@@ -237,7 +237,7 @@ class CRUD{
 
     public void InventarioTotal(){
 
-        double suma = 0.0, total;
+        double suma = 0.0;
         for(Productos producto : lista_productos){
             suma += producto.getPrecio_producto() * producto.getCantidad_producto();
         }
