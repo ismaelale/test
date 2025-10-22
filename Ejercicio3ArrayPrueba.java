@@ -80,7 +80,7 @@ public class Ejercicio3ArrayPrueba{
                         }
                         break;
 
-                    }
+                    }   
                     case 5 ->{
                         System.out.println("ELIMINAR EMPLEADO");
                         System.out.println("INGRESE EL CODIGO DE USUARIO");

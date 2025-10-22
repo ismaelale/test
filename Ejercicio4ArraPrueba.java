@@ -1,6 +1,9 @@
+package Logica_Y_Estructura_De_Datos;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Iterator;
+
 
 public class Ejercicio4ArraPrueba{
     public static void main(String[] args){
