@@ -1,0 +1,93 @@
+Objetivo: practicar listas enlazadas y ArrayList juntos.
+
+Contexto:
+
+Quieres simular un sistema básico de biblioteca.
+
+Requisitos:
+
+Crea una lista enlazada para los libros disponibles (cada nodo representa un libro).
+
+Datos: título, autor, año, disponible (boolean).
+
+Crea un ArrayList para almacenar los libros prestados.
+
+Implementa las siguientes operaciones:
+
+Agregar libro → se agrega al final de la lista enlazada.
+
+Ver libros → muestra todos los libros con su estado.
+
+Prestar libro → pasa un libro de la lista enlazada al ArrayList.
+
+Devolver libro → lo quita del ArrayList y lo agrega otra vez a la lista enlazada.
+
+Buscar libro por título o autor. 
+
+
+EJERCICIO DEFINITIVO 
+Ejercicio: Sistema de Reservas de Clases en un Gimnasio
+Contexto:
+
+Un gimnasio quiere controlar las reservas de clases que hacen los clientes.
+Cada clase tiene un número limitado de cupos y cada cliente puede reservar una clase mientras haya espacio.
+
+📋 Estructura general
+
+Lista enlazada → Guardará las reservas de cada cliente (cada nodo representa una reserva activa).
+
+ArrayList → Guardará todas las clases disponibles del gimnasio (y sus cupos).
+
+⚙️ Detalles del sistema
+
+Cada clase tiene:
+
+Nombre (por ejemplo, “Zumba”, “Crossfit”, “Yoga”).
+
+Instructor.
+
+Capacidad máxima.
+
+Número actual de reservaciones.
+
+Cada cliente (en la lista enlazada) tiene:
+
+Nombre del cliente.
+
+Clase que reservó.
+
+Estado (activa o cancelada).
+
+🔧 Operaciones que debe permitir el programa
+
+Agregar clases al gimnasio (se almacenan en el ArrayList).
+
+Ver clases disponibles (mostrar solo las que aún tengan cupos).
+
+Registrar una reserva:
+
+Se busca la clase en el ArrayList.
+
+Si hay espacio, se crea un nodo en la lista enlazada con la información del cliente.
+
+Se aumenta el contador de reservaciones en la clase.
+
+Ver todas las reservas activas (recorriendo la lista enlazada).
+
+Cancelar una reserva:
+
+Se busca al cliente en la lista enlazada.
+
+Se elimina el nodo correspondiente y se reduce el contador de la clase en el ArrayList.
+
+Mostrar clases con más reservas (analizando los datos del ArrayList).
+
+🎯 Objetivo
+
+Practicar cómo:
+
+Recorrer una lista enlazada para buscar, eliminar o mostrar datos dinámicos (las reservas).
+
+Modificar datos dentro de un ArrayList (las clases y sus cupos).
+
+Mantener la sincronización entre ambas estructuras.
