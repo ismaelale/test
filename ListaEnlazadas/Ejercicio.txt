@@ -91,3 +91,127 @@ Recorrer una lista enlazada para buscar, eliminar o mostrar datos dinámicos (la
 Modificar datos dentro de un ArrayList (las clases y sus cupos).
 
 Mantener la sincronización entre ambas estructuras.
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Ejercicio — Sistema de Talleres Universitarios
+🏫 Contexto
+
+La universidad desea controlar los talleres extracurriculares (por ejemplo: Robótica, Programación, Fotografía, Pintura).
+Cada taller tiene un límite de cupos, y los estudiantes pueden inscribirse mientras haya espacio disponible.
+
+🧱 Estructura que debes usar
+
+ArrayList → Para almacenar todos los talleres disponibles.
+Cada objeto debe guardar:
+
+Nombre del taller
+
+Profesor responsable
+
+Capacidad máxima
+
+Cupos ocupados
+
+Lista enlazada manual (con nodos) → Para guardar las inscripciones de estudiantes.
+Cada nodo representa un estudiante inscrito en un taller.
+
+🧮 El sistema debe permitir
+
+Agregar talleres al ArrayList.
+
+Ver talleres disponibles (solo los que aún tienen cupos).
+
+Registrar un estudiante en un taller
+
+Se busca el taller en el ArrayList.
+
+Si hay cupo, se crea un nodo en la lista enlazada con:
+
+Nombre del estudiante
+
+Taller inscrito
+
+Se incrementa el contador de cupos ocupados.
+
+Mostrar todos los estudiantes inscritos y en qué taller están.
+
+Cancelar inscripción de un estudiante.
+
+Elimina el nodo correspondiente en la lista enlazada.
+
+Reduce el cupo ocupado del taller en el ArrayList.
+
+Mostrar el taller con más inscritos
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+🧩 Problema: Sistema de préstamos de libros en una biblioteca
+
+Una biblioteca quiere gestionar los préstamos de libros a los usuarios.
+Cada usuario puede tener uno o varios libros prestados, 
+pero cada libro solo puede estar prestado a un usuario a la vez.
+
+El sistema debe permitir:
+
+Registrar nuevos libros en la biblioteca.
+
+Registrar nuevos usuarios.
+
+Permitir que un usuario solicite un libro (si está disponible).
+
+Permitir que un usuario devuelva un libro (liberando el préstamo).
+
+Mostrar la lista de usuarios con los libros que actualmente tienen prestados.
+
+Mostrar los libros que aún están disponibles para préstamo.
+
+📘 Pistas lógicas (no técnicas):
+
+Piensa cómo relacionar a los usuarios con los libros que tienen prestados.
+
+Piensa qué ocurre con un libro cuando pasa de “disponible” a “prestado”.
+
+Considera qué debe pasar si un usuario devuelve su último libro.
+
+Reflexiona cómo evitar que un mismo libro se preste a dos personas al mismo tiempo.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Problema: Sistema de pedidos de restaurante
+
+Un restaurante necesita un programa para gestionar los pedidos de los clientes del día.
+Cada pedido se agrega dinámicamente a una lista enlazada.
+
+Tu programa debe permitir lo siguiente:
+
+Agregar un pedido con:
+
+nombre del cliente,
+
+nombre del platillo,
+
+precio del platillo.
+
+Mostrar todos los pedidos actuales.
+
+Calcular el total de ventas del día sumando todos los precios.
+
+Marcar un pedido como entregado (eliminarlo de la lista).
+
+Buscar un pedido por nombre de cliente y mostrar su platillo y precio.
+
+Cancelar todos los pedidos (vaciar la lista).
+
+🎯 Retos opcionales:
+
+Mostrar un mensaje si no hay pedidos.
+
+Evitar duplicados de cliente.
+
+Mostrar la cantidad total de pedidos.
+
+
+
