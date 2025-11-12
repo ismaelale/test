@@ -180,38 +180,26 @@ Reflexiona cómo evitar que un mismo libro se preste a dos personas al mismo tie
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Problema: Sistema de pedidos de restaurante
+Ejercicio: Sistema de pedidos de restaurante
 
-Un restaurante necesita un programa para gestionar los pedidos de los clientes del día.
-Cada pedido se agrega dinámicamente a una lista enlazada.
+Un restaurante recibe pedidos de diferentes clientes a lo largo del día.
+Cada pedido puede tener varios platillos, y cada cliente puede hacer 
+más de un pedido.
 
-Tu programa debe permitir lo siguiente:
+Tu sistema debe permitir:
 
-Agregar un pedido con:
+Registrar nuevos pedidos, asignando el nombre del cliente y los 
+platillos con su precio.
 
-nombre del cliente,
+Mostrar todos los pedidos actuales con su cliente y total a pagar.
 
-nombre del platillo,
+Permitir eliminar un pedido específico (por ejemplo, si el cliente cancela).
 
-precio del platillo.
+Calcular el total general de ventas del día.
 
-Mostrar todos los pedidos actuales.
+Mostrar una lista de los clientes que han hecho pedidos, sin repetir nombres.
 
-Calcular el total de ventas del día sumando todos los precios.
-
-Marcar un pedido como entregado (eliminarlo de la lista).
-
-Buscar un pedido por nombre de cliente y mostrar su platillo y precio.
-
-Cancelar todos los pedidos (vaciar la lista).
-
-🎯 Retos opcionales:
-
-Mostrar un mensaje si no hay pedidos.
-
-Evitar duplicados de cliente.
-
-Mostrar la cantidad total de pedidos.
+Al finalizar el día, poder vaciar la lista de pedidos (como cierre de jornada).
 
 
 
